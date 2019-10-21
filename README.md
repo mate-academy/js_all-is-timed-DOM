@@ -15,4 +15,4 @@ Requirements:
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+- [UPDATE DEMO LINK](nikakarelets.github.io/js_all-is-timed-DOM/src/index)
