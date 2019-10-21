@@ -15,4 +15,4 @@ Requirements:
 
 **Result**
 
-- [UPDATE DEMO LINK](nikakarelets.github.io/js_all-is-timed-DOM/src/index)
+- [UPDATE DEMO LINK](https://nikakarelets.github.io/js_all-is-timed-DOM/src/index)
