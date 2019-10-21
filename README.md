@@ -15,4 +15,4 @@ Requirements:
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+- [LINK](https://dsrtf0x-git.github.io/js_all-is-timed-DOM/)
