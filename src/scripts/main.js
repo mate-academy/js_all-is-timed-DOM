@@ -1,6 +1,6 @@
 'use strict';
 
-localStorage.timer = localStorage.timer || 0;
+localStorage.timer = localStorage.timer || 0; // fdg
 
 setInterval(() => {
   localStorage.timer++;
