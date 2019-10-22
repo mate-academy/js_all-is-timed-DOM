@@ -1,8 +1,10 @@
 'use strict';
+const item = document.querySelector('#timer');
+let timer = localStorage.getItem('timer');
+item.textContent = `You are here ${timer} seconds`;
+
 setInterval(() => {
-  let timer = localStorage.getItem('timer');
   timer++;
   localStorage.setItem('timer', timer);
-  document.querySelector('#timer').innerHTML
-  = `You are here ${localStorage.getItem('timer')} seconds`;
+  item.innerHTML = `You are here ${timer} seconds`;
 }, 1000);
