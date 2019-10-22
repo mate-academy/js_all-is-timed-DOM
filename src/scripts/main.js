@@ -1,10 +1,10 @@
 'use strict';
 
-localStorage.timer = localStorage.timer || 0;
+const timerItem = 'timer';
+let seconds = localStorage.getItem(timerItem) || 0;
+const secondsTimer = document.getElementById(timerItem)
 
 setInterval(() => {
-  localStorage.timer++;
-  document.getElementById('timer')
-    .textContent = `You spent ${localStorage.timer}
-    seconds on this website`;
+  localStorage.setItem(timerItem, ++seconds)
+  secondsTimer.textContent = `You spent ${localStorage.timer} seconds on this website`;
 }, 1000);
