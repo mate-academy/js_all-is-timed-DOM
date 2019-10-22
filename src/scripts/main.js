@@ -1,19 +1,12 @@
 'use strict';
-document.addEventListener("DOMContentLoaded", initCounter);
-let seconds = localStorage.getItem('seconds');
+let secondsCounter = localStorage.getItem('seconds') || 0;
+const seconds = document.getElementById('seconds');
 
 function clock() {
-  seconds++;
-  document.getElementById("seconds").innerHTML = seconds;
-  localStorage.setItem('seconds', seconds);
-}
-
-function initCounter() {
-  if(seconds === undefined) {
-    seconds = 0;
-  }
-
-  document.getElementById("seconds").innerHTML = seconds;
+  secondsCounter++;
+  seconds.innerHTML = secondsCounter;
+  localStorage.setItem('seconds', secondsCounter);
 }
 
 setInterval(clock, 1000);
+document.addEventListener("DOMContentLoaded", clock);
