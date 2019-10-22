@@ -1,5 +1,5 @@
 'use strict';
-let timer = document.getElementById('timer');
+const timer = document.getElementById('timer');
 
 if (!localStorage.hasOwnProperty('timeInPage')) {
   localStorage.setItem('timeInPage', 0);
@@ -7,9 +7,7 @@ if (!localStorage.hasOwnProperty('timeInPage')) {
 
 timer.innerText = `${localStorage.getItem('timeInPage')}s`;
 
-let timerId = setInterval(() => {
+setInterval(() => {
   localStorage['timeInPage']++;
   timer.innerText = `${localStorage.getItem('timeInPage')}s`;
 }, 1000);
-
-
