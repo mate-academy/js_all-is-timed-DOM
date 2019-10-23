@@ -1,3 +1,31 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+
+body {
+  font-family: ff-enzo-web, helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 1px,
+    rgba(0, 0, 0, 0.3) 1px,
+    rgba(0, 0, 0, 0.3) 5px),
+  url('../background.jpg') no-repeat center bottom;
+  background-size: cover;
+  position: relative;
+  border: 10px solid #efefef;
+  text-align: center;
+  min-height: 96vh;
+  text-shadow: 0 0 20px #262c3c;
+}
+
+.count {
+  font-size: 300px;
+  color: white;
+}
+
+.heading {
+  color: white;
+  font-size: 50px;
+}
