@@ -5,7 +5,6 @@ seconds.innerHTML = secondsCounter;
 
 function clock() {
   secondsCounter++;
-  seconds.innerHTML = secondsCounter;
   localStorage.setItem('seconds', secondsCounter);
 }
 
