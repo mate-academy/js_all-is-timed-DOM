@@ -15,4 +15,4 @@ Requirements:
 
 **Result**
 
-- [UPDATE DEMO LINK](https://YuraBobeshko.github.io/js_all-is-timed-DOM/)
+- [UPDATE DEMO LINK](https://YuraBobeshko.github.io/js_all-is-timed-DOM/src)
