@@ -6,7 +6,7 @@ seconds.innerHTML = secondsCounter;
 function clock() {
   secondsCounter++;
   localStorage.setItem('seconds', secondsCounter);
+  seconds.innerHTML = secondsCounter;
 }
 
 setInterval(clock, 1000);
-document.addEventListener("DOMContentLoaded", clock);
