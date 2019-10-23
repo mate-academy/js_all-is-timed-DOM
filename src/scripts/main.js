@@ -1,13 +1,11 @@
 'use strict';
+const div = document.createElement('div');
+let spendSeconds = localStorage.getItem('spendSeconds') || 0;
+
+div.textContent = `You spend on this page ${spendSeconds} seconds.`;
+document.body.appendChild(div);
 
 setInterval(() => {
-  let spendSeconds = localStorage.getItem('spendSeconds');
-
-  if (!spendSeconds) {
-    localStorage.setItem('spendSeconds', 0);
-  } else {
-    localStorage.setItem('spendSeconds', ++spendSeconds);
-  }
-
-  console.log(`You spend on this page ${localStorage.getItem('spendSeconds')} seconds.`);
+  localStorage.setItem('spendSeconds', ++spendSeconds);
+  div.textContent = `You spend on this page ${spendSeconds} seconds.`;
 }, 1000);
