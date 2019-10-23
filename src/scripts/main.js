@@ -1,5 +1,5 @@
 'use strict';
-let secondsCounter = localStorage.getItem('seconds') || 0;
+let secondsCounter = localStorage.getItem('seconds') || -1;
 const seconds = document.getElementById('seconds');
 
 function clock() {
