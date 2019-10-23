@@ -1,5 +1,6 @@
 'use strict';
-let timerKey;
+
+const timerKey = 'timer';
 let timer = 0;
 const timerSpan = document.querySelector('#seconds');
 
